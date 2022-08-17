@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>F to C</title>
+</head>
+<body>
+<h1>Change Between Feet and Meter</h1>
+
+<select id="len">
+  <option>Foot</option>
+  <option>Meter</option>
+</select>
+<input type="number" id="calc" oninput="conv()">
+<p id="kq"></p>
+<script>
+  function conv(){
+    let result="";
+    if(document.getElementById("len").value=="Foot"){
+      result="Meter:" +parseInt(document.getElementById("calc").value)*0.305;
+    }else{
+      result="Foot:"+ parseInt(document.getElementById("calc").value)*3.279;
+    }
+    document.getElementById("kq").innerHTML = result;
+  }
+
+</script>
+</body>
+</html>
