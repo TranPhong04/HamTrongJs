@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=prompt("Enter a word!");
+    function check (){
+        let kq =true;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]!==arr[arr.length-i-1]){
+                kq=false;
+                break;
+            }
+        }if(kq){
+            return true
+        }else{
+            return false
+        }
+    }
+
+    alert(check())
+</script>
+</body>
+</html>
