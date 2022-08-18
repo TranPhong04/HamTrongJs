@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let array=[5,2,4,3,32,23]
+        function xoa(index) {
+            let i=0;
+            let arr =[];
+            for ( i; i < array.length; i++){
+                if(i==index){
+                    i+=1
+                }
+            arr.push(array[i]);
+            }return arr
+        }
+
+let kq=xoa(3)
+        document.write(kq);
+</script>
+</body>
+</html>

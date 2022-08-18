@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let so1=parseInt(prompt("So 1 la"))
+  let so2=parseInt(prompt("So 2 la"))
+  let so3=parseInt(prompt("So 3 la"))
+  function check(){
+    let min=0;
+    if(so1<so2&&so1<so3){
+      min =so1;
+    }
+    else if(so2<so3){
+      min=so2;
+    }else{
+      min=so3; }
+    return min;
+  }
+  let kq=check();
+  alert(kq)
+</script>
+</body>
+</html>

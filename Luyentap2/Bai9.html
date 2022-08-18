@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n=parseInt(prompt("Enter array length"))
+  let array=[];
+  for(let i=0;i<n;i++){
+    array.push(prompt("Nhap vao mang"))}
+</script>
+<input id="ten" type="text">
+<input type="button" value="Check" onclick="check()">
+<p id="res"></p>
+<script>
+function check(){
+  let kq=0;
+  for(let i=0;i<array.length;i++){
+    if(document.getElementById("ten").value==array[i]){
+      kq+=1;
+    }
+
+    }if(kq==0){
+    kq=-1
+  }
+  document.getElementById("res").innerHTML= kq;
+}
+
+</script>
+</body>
+</html>
